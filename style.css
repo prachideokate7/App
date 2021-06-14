@@ -1,0 +1,328 @@
+body {
+    background-color: black;
+}
+
+/*navbar*/
+.open {
+    float: right;
+    font-family: Lineat III;
+    color: #FF0000;
+    margin: 3%;
+}
+
+#closebtn {
+    font-family: Lineat III;
+    color: #FF0000;
+    font-size: 30px;
+    float: right;
+    margin: 8%;
+}
+
+.overlay {
+    height: 100%;
+    width: 25%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    padding-left: 4%;
+}
+
+.overlay a {
+    text-decoration: none;
+    font-size: 36px;
+    color: #000000;
+    padding: 4%;
+    font-family: Berlin Sans FB;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+li a {
+    color: #000;
+    text-decoration: none;
+    float: left;
+
+}
+
+/*navbar completed*/
+
+/*title*/
+#title1 {
+    position: relative;
+    float: left;
+    color: #FFD500;
+    font-family: Phantom;
+    font-weight: medium;
+    font-size: 6rem;
+    margin: 1rem;
+}
+
+#title2 {
+    font-family: Berlin Sans FB;
+    position: relative;
+    color: #FFD500;
+    font-size: 1.4rem;
+}
+
+/*title completed*/
+
+/*alternative line*/
+#line {
+    position: relative;
+    float: left;
+    color: #707070;
+    font-family: Lineat III;
+    font-weight: medium;
+    font-size: 3.3rem;
+    top: 30rem;
+    left: -14rem;
+}
+
+#line2 {
+    color: #707070;
+    font-family: Berlin Sans FB;
+    font-weight: medium;
+    font-size: 1.3rem;
+    top: 25rem;
+}
+
+/*alternative line completed*/
+
+/*svg*/
+#svg {
+    position: relative;
+    float: right;
+}
+
+/*svg completed*/
+
+/*trend*/
+.item {
+    border: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.container-trend {
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-gap: 2rem;
+    grid-template-rows: repeat(5, 150px);
+    flex-wrap: wrap;
+    top: 43rem;
+    float: left;
+    margin-left: 11rem;
+    margin-top: 5rem;
+}
+
+.item1 {
+    grid-row: 1/3;
+}
+
+.item2 {
+    grid-row: 2 / 4;
+}
+
+.item3 {
+    grid-row: 1 / 3;
+}
+
+.item4 {
+    grid-row: 2 / 4;
+}
+
+.item5 {
+    grid-row: 1 / 3;
+}
+
+.item6 {
+    grid-row: 5 / 3;
+    grid-column: 3 / 4;
+
+}
+
+/*trend completed*/
+
+/*about*/
+.about {
+    position: absolute;
+    width: 85rem;
+    height: 40rem;
+    top: 98rem;
+    background-color: white;
+    margin-left: 4rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+
+.about img {
+    position: relative;
+    width: 35rem;
+    height: 35rem;
+    margin: 2rem;
+}
+
+#about-title {
+    position: relative;
+    color: #FF0000;
+    top: 1rem;
+    margin: 2rem;
+    float: right;
+    font-size: 3rem;
+    font-family: Lineat III;
+}
+
+#about-text {
+    position: relative;
+    color: rgb(0, 0, 0);
+    margin: 3rem;
+    float: right;
+    display: block;
+    font-size: 2rem;
+    width: 44rem;
+    top: -26rem;
+    height: 12rem;
+    font-family: Berlin Sans FB;
+    text-align: right;
+}
+
+/*about completed*/
+
+/*features*/
+.feature {
+    display: flex;
+    position: absolute;
+    top: 145rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    left: 6rem;
+}
+
+.f1,
+.f2,
+.f3 {
+    background-color: white;
+    height: 45rem;
+    width: 22rem;
+    margin: 1rem 0rem 0rem 3rem;
+    border-radius: 2.7rem;
+    -webkit-border-radius: 2.7rem;
+    -moz-border-radius: 2.7rem;
+    -ms-border-radius: 2.7rem;
+    -o-border-radius: 2.7rem;
+}
+
+.f2 {
+    width: 27rem;
+}
+
+.f1,
+.f3 {
+    height: 37rem;
+    margin-top: 5rem;
+}
+
+/*features completed*/
+
+/*technology*/
+.tech {
+    text-align: center;
+    position: absolute;
+    top: 198rem;
+    left: 17rem;
+}
+
+.tech-title {
+    position: relative;
+    font-size: 3rem;
+    color: white;
+    font-family: Lineat III;
+    padding: 0rem 0rem 10rem 6rem;
+}
+
+#tech-title2 {
+    position: relative;
+    font-size: 3rem;
+    font-family: Berlin Sans FB;
+}
+
+#tech-img {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+}
+
+.tech img {
+    margin: 3rem;
+}
+
+/*technology we used*/
+
+/*Contact form*/
+.contact-container {
+    position: absolute;
+    top: 235rem;
+    width: 85rem;
+    height: 40rem;
+    background-color: white;
+    margin-left: 4rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+
+#title1 {
+    position: relative;
+    float: left;
+    color: #FFD500;
+    font-family: Phantom;
+    font-weight: medium;
+    font-size: 6rem;
+    margin: 1rem;
+}
+
+#title2 {
+    font-family: Berlin Sans FB;
+    position: relative;
+    color: #FFD500;
+    font-size: 1.4rem;
+}
+
+.ver {
+    height: 300px;
+    border-left: 1px solid #000900;
+    position: absolute;
+    left: 50%;
+    margin: 3rem;
+}
+
+/*Contact Form*/
