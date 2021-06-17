@@ -352,59 +352,198 @@ li a {
 
 .contact2 {
     position: absolute;
-    top: 15rem;
-    left: 45rem;
+    top: 22rem;
+    left: 60rem;
     display: block;
     float: right;
     font-family: Berlin Sans FB;
 }
 
-input[type=text],
-select,
-textarea {
-    width: 80%;
-    padding: 12px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    font-size: 2rem;
-    font-family: Berlin Sans FB;
-    border: none;
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;font-family: Berlin Sans FB;
 }
 
-input[type=submit] {
-    background-color: #ffffff;
-    color: black;
-    padding: 20px 70px 20px 70px;
-    border: 1px solid #707070;
-    border-radius: 50px;
-    font-family: Berlin Sans FB;
-    cursor: pointer;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    float: right;
-    margin: 5rem 7rem 3rem 0rem;
-    font-size: 1.7rem;
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 
-input[type=submit]:hover {
-    background-color: #ffffff;
-    border: none;
+.login-box .user-box {
+  position: relative;
+  font-family: Berlin Sans FB;
 }
 
-input[type=text],
-select,
-textarea:hover {
-    border: none;
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+  background: transparent;
+  font-family: Berlin Sans FB;
 }
 
-.container {
-    padding: 1px;
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  pointer-events: none;
+  transition: .5s;
+  font-family: Berlin Sans FB;
 }
 
-/*Contact Form*/
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #000000;
+  font-size: 12px;
+  font-family: Berlin Sans FB;
+}
+
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000;
+  font-family: Berlin Sans FB;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+  left: 90%;
+  font-family: Berlin Sans FB;
+}
+
+
+.login-box a:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #0a0a0a,
+              0 0 25px #000000,
+              0 0 50px #000000,
+              0 0 50px #000000;
+  border-radius: 100rem;
+  font-family: Berlin Sans FB;
+}
+
+
+.login-box a span {
+  position: absolute;
+  display: block;
+  font-family: Berlin Sans FB;
+}
+
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #000000);
+  animation: btn-anim1 1s linear infinite;
+  font-family: Berlin Sans FB;
+}
+
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #000000);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #000000);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #000000);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+/*Contact Form completed*/
 
 /*Footer*/
 footer {
@@ -425,3 +564,14 @@ footer {
 }
 
 /*Footer Completed*/
+
+
+/*Responsive Webdesign*/
+
+/*Mobile phone*/
+
+@media only screen and (max-width:500px) {
+    .open {
+        margin: 8%;
+    }
+}
