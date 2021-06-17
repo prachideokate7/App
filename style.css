@@ -64,17 +64,18 @@ li a {
 /*navbar completed*/
 
 /*title*/
-#title1 {
+#title1 a{
     position: relative;
     float: left;
     color: #FFD500;
     font-family: Phantom;
     font-weight: medium;
     font-size: 6rem;
+    text-decoration: none;
     margin: 1rem;
 }
 
-#title2 {
+#title2 a{
     font-family: Berlin Sans FB;
     position: relative;
     color: #FFD500;
@@ -309,14 +310,15 @@ li a {
     margin: 3rem;
 }
 
-#title1 {
+#title1 a {
     position: relative;
     float: left;
     color: #FFD500;
     font-family: Phantom;
-    font-weight: medium;
     font-size: 6rem;
     margin: 1rem;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #title2 {
