@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Products.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-----Name------>
+    <div>
+        <div id="title1">
+            <a href="index.html">Quest
+                <div id="title2">
+                    Towards Eternity...!
+                </div>
+    
+            </a>
+        </div>
+    </div>
+    
+    </div>
+    <!--Name Completed-->
+    
+    <!----Navbar------>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">Close</a>
+        <div class="overlay-content">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><img src="images\home_black_24dp (1).svg" width="40px"
+                            height="40px" alt=""> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About Us"><img src="images\supervisor_account_black_24dp.svg" width="40px"
+                            height="40px" alt=""> About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Apps"><img src="images\android_black_24dp (1).svg" width="40px" height="40px"
+                            alt=""> Our Apps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact_Us.html"><img src="images\contact_mail_black_24dp.svg" width="35px"
+                            height="35px" alt=""> Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="open">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">Menu</span>
+    </div>
+    
+    <script src="script.js"></script>
+    <!------Navbar Completed------>
+
+    <!--products-->
+<!--filters-->
+
+<div id="myBtnContainer">
+    <button class="btn" onclick="filterSelection('all')"></button>
+    <button class="btn" onclick="filterSelection('photo')"></button>
+    <button class="btn" onclick="filterSelection('cars')"></button>
+    <button class="btn" onclick="filterSelection('Bikes')"></button>
+    <button class="btn" onclick="filterSelection('Computers')"></button>
+</div>
+
+<!---filters -->
+
+<!--products cards-->
+
+<div class="productContainer">
+    <div class="singleproductContainer">
+    <div id="cardimg">
+        <img src="images\product.png" alt="" width="100%" height="20%" srcset="">
+        <div id="quotebtn">
+            <button>
+                Get a Quote
+            </button>
+        </div>
+    </div>
+    <div class="titlecard">
+        <div id="mainName">
+            App Name
+            <div id="subName">
+                One line feature of App catchy One
+            </div>
+        </div>
+        <div id="price">
+            Rs.1000
+        </div>
+        <div id="stars">
+            <div class="feedback">
+                <div class="rating">
+                    <input type="radio" name="rating" id="rating-5">
+                    <label for="rating-5"></label>
+                    <input type="radio" name="rating" id="rating-4">
+                    <label for="rating-4"></label>
+                    <input type="radio" name="rating" id="rating-3">
+                    <label for="rating-3"></label>
+                    <input type="radio" name="rating" id="rating-2">
+                    <label for="rating-2"></label>
+                    <input type="radio" name="rating" id="rating-1">
+                    <label for="rating-1"></label>
+                   </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--products cards-->
+    <!--products completetd-->
+</body>
+</html>
