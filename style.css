@@ -662,14 +662,3 @@ footer {
 }
 
 /*Footer Completed*/
-
-
-/*Responsive Webdesign*/
-
-/*Mobile phone*/
-
-@media only screen and (max-width:500px) {
-    .open {
-        margin: 8%;
-    }
-}
