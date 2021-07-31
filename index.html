@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <html lang="en">
 
 <head>
@@ -8,6 +9,25 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive_mobile.css">
   <title>App_Selling_Website</title>
+  <link rel="stylesheet" href="carousel.css" media="screen" />
+  <script src="jquery-1.5.1.min.js"></script>
+  <script src="jquery.carousel.js"></script>
+
+  <style>
+    img,
+    ol,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+      list-style: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -119,16 +139,51 @@
     <script src="script.js"></script>
     <!------Navbar Completed------>
 
-
     <!---image of ss--->
-    <div id="svg">
-      <svg xmlns="http://www.w3.org/2000/svg" width="340" height="600" viewBox="0 0 384.806 901.152">
-        <path id="Path_56" data-name="Path 56"
-          d="M865.466,715.188v841.04c0,26.042-37.394,43.341-70.235,32.49l-267.208-88.294c-28.251-9.333-46.363-29.682-46.363-52.087V820.919c0-15.244,12.715-28.993,32.231-34.856l34.739-10.436V800.9c0,13.162,18.084,22.38,35.3,17.984l125.682-32.1c29.861-7.61,49.827-27.981,49.827-50.813V712.3l61.555-18.489C842.148,687.461,865.466,698.666,865.466,715.188Z"
-          transform="translate(-481.16 -691.363)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1" />
-      </svg>
+    <div class="smartphone">
+      <div class="content">
+        <div class="slider-container">
+          <div class="slider">
+            <ul>
+              <li class="slide-one">
+                <a href="#1" title="slide-1">
+                  <img src="img/f6.png" alt="1">
+                </a>
+              </li>
+              <li class="slide-two">
+                <a href="#2" title="slide-2">
+                  <img src="img/f7.png" alt="2">
+                </a>
+              </li>
+              <li class="slide-two">
+                <a href="#2" title="slide-2">
+                  <img src="img/f8.png" alt="2">
+                </a>
+              </li>
+              <li class="slide-two">
+                <a href="#2" title="slide-2">
+                  <img src="img/f9.png" alt="2">
+                </a>
+              </li>
+              <li class="slide-two">
+                <a href="#2" title="slide-2">
+                  <img src="img/f10.png" alt="2">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+
+        $('.slider').carousel('.slider-pagination');
+
+      });
+    </script>
 
     <!---image of ss completed--->
 
