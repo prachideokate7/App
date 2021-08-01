@@ -1,4 +1,6 @@
-
+body {
+    background-color: rgb(0, 0, 0);
+}
 /* Carousel css */
 .slider-container {
   top: 50px;
@@ -37,7 +39,7 @@
 .slider img {
    width: 260px;
   height: 440px;
-  z-index: 78;
+  z-index: -78;
 }
 .slider-pagination {
   clear: both;
@@ -65,17 +67,22 @@
   -o-transition: background 1s;
 }
 .smartphone, content {
-  position: relative;
+  position: absolute;
   width: 260px;
   height: 440px;
   margin: auto;
-  border: 16px black solid;
+  border: 16px rgb(255, 255, 255) solid;
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
-  z-index: 123;
-  left: 20%;
+  left: 65%;
+  top: 8.5rem;
   background: white;
+  -ms-transform: skewY(10deg);
+  transform: skewY(10deg);
+  -webkit-transform: skewY(10deg);
+  -moz-transform: skewY(10deg);
+  -o-transform: skewY(10deg);
 }
 
 /* The horizontal line on the top of the device */
